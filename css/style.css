@@ -126,7 +126,7 @@ h3.und {
 
 h3.und::before {
 
-	background-image: linear-gradient(120deg, #FFD321 0%, #ffffff 100%);
+	background-image: linear-gradient(120deg, #FFD321 0%, #FFD321 100%);
     content: " ";
     display: block;
     height: 6px;
@@ -481,3 +481,34 @@ footer {
     padding-bottom: 40px;
   }
 }
+
+/* Lucy and Michu */
+.floating-icons {
+   border: solid 0px black;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  width: 1400px;
+}
+
+.floating-icons img {
+  border: solid 0px red;
+  filter: grayscale(100%);
+  position: absolute;
+  right: -2000px;
+  /* starting from outside of the container */
+}
+
+@keyframes floating {
+  from { right: -10px; }
+  to { right: 100%; }
+}
+
+
+.icon-1 { height: 50%; animation: floating 8.3s linear infinite 1s; }
+.icon-2 { height: 70%; animation: floating 8.3s linear infinite 1.8s; }
+.icon-3 { height: 50%; animation: floating 8.3s linear infinite 3s; }
+.icon-4 { height: 50%; animation: floating 8.3s linear infinite 4.4s; }
+.icon-5 { height: 50%; animation: floating 8.3s linear infinite 5.5s; }
+.icon-6 { height: 50%; animation: floating 8.3s linear infinite 6.7s; }
+.icon-7 { height: 50%; animation: floating 8.3s linear infinite 8.1s; }
