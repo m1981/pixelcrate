@@ -117,15 +117,42 @@ section#about p {
   text-align: justify;
 }
 
+.code{	
+	position: relative;
+	font-weight: 700;
+    animation: colorchange 15s infinite; /* animation duration of five seconds in infinite loop */
+}
+
+@keyframes colorchange {
+    0% {color: hsl(90, 100%, 50%);}
+    25% {color: hsl(162, 100%, 50%);}
+    50% {color: hsl(234, 100%, 50%);}
+    75% {color: hsl(306, 100%, 50%);}
+    100% {color: hsl(90, 100%, 50%);}
+}
 
 
+
+.code::before {
+	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    content: " ";
+
+    height: 0px;
+    width: 124%;
+    margin-left: -3px;
+    margin-right: -3px;
+    position: absolute;
+    transform: rotate(1deg);
+    border-radius: 20% 25% 20% 24%;
+    z-index: -1;
+    top: 61%;
+}
 
 h3.und {
   position: relative;
 }
 
 h3.und::before {
-
 	background-image: linear-gradient(120deg, #FFD321 0%, #FFD321 100%);
     content: " ";
     display: block;
@@ -145,7 +172,7 @@ h3.und::before {
   font-weight: 700;
 }
 
-.und2::before {
+.und2::before{
 	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
     content: " ";
 
