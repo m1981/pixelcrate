@@ -36,6 +36,14 @@ h1,h2,h3,h4 {
 	font-weight: bold;
 }
 
+
+hr.sep {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 2px solid #ffd321;
+}
+
 p {
 	letter-spacing: 0px;
 	line-height: 28px;
